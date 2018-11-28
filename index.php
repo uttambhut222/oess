@@ -28,14 +28,14 @@ if(isset($_POST['inquire_submit'])){
 				//$mail->FromName = FROMNAME; 
 				$mail->Username = USERNAME;
 				$mail->Password = USERPASSWORD;
-				$mail->SetFrom('no-reply@theopeneyes.com','OpenEyes Software Solutions Pvt.Ltd');
+				$mail->SetFrom('no-reply@theopeneyes.com','OpenEyes Software Solutions Pvt. Ltd.');
 									
-			$mail->Subject = "Inquire Generated - OpenEyes Software Solutions Pvt.Ltd";
+			$mail->Subject = "Inquire Generated - OpenEyes Software Solutions Pvt. Ltd.";
 			$mail->Body = '
 			<table border="1" cellpadding="0" cellspacing="0" style="border:1px solid rgb(120, 120, 120); color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:15px; line-height:22px; margin:0 auto; width:600px">
 				<tbody>
 					<tr>
-						<td style="background-color:rgba(180, 180, 180, 0.5); border-bottom:5px solid #0061af; padding:10px"><a href="http://www.theopeneyes.com" target="_blank"><img alt="The OpenEyes Technologies Logo" src="http://www.theopeneyes.com/images/logo-email.png" /></a></td>
+						<td style="background-color:rgba(180, 180, 180, 0.5); border-bottom:5px solid #0061af; padding:10px"><a href="http://www.theopeneyes.com" target="_blank"><img alt="The OpenEyes Software Solution Logo" src="http://www.theopeneyes.com/images/logo-email.png" /></a></td>
 					</tr>
 					<tr>
 						<td style="padding:10px">
@@ -55,7 +55,7 @@ if(isset($_POST['inquire_submit'])){
 						</td>
 					</tr>
 					<tr>
-						<td style="background-color:#a6ce39; background:#a6ce39; color:#333; padding:10px; text-align:center">Copyright &copy; 2018 OpenEyes Technologies - All rights reserved.</td>
+						<td style="background-color:#a6ce39; background:#a6ce39; color:#333; padding:10px; text-align:center">&copy; 2018 OpenEyes Software Solutions Pvt. Ltd. - All rights reserved.</td>
 					</tr>
 				</tbody>
 			</table>
@@ -76,7 +76,7 @@ if(isset($_POST['inquire_submit'])){
 							});
 						}, 0);
 					</script>
-				<?php
+		 		<?php
 			}
 			
 			
@@ -93,27 +93,27 @@ if(isset($_POST['inquire_submit'])){
 				//$mail->FromName = FROMNAME; 
 				$mail->Username = USERNAME;
 				$mail->Password = USERPASSWORD;
-				$mail->SetFrom('info@theopeneyes.com','OpenEyes Software Solutions Pvt.Ltd');
+				$mail->SetFrom('info@theopeneyes.in','OpenEyes Software Solutions Pvt. Ltd.');
 									
-			$mail->Subject = "Thank you for enquiry - OpenEyes Software Solutions Pvt.Ltd";
+			$mail->Subject = "Thank you for enquiry - OpenEyes Software Solutions Pvt. Ltd.";
 			$mail->Body = '
 			<table border="1" cellpadding="0" cellspacing="0" style="border:1px solid rgb(120, 120, 120); color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:15px; line-height:22px; margin:0 auto; width:600px">
 				<tbody>
 					<tr>
-						<td style="background-color:rgba(180, 180, 180, 0.5); border-bottom:5px solid #0061af; padding:10px"><a href="http://www.theopeneyes.com" target="_blank"><img alt="The OpenEyes Technologies Logo" src="http://www.theopeneyes.com/images/logo-email.png" /></a></td>
+						<td style="background-color:rgba(180, 180, 180, 0.5); border-bottom:5px solid #0061af; padding:10px"><a href="http://www.theopeneyes.com" target="_blank"><img alt="The OpenEyes Software Solution Logo" src="http://www.theopeneyes.com/images/logo-email.png" /></a></td>
 					</tr>
 					<tr>
 						<td style="padding:10px">
 							<h1 style="font-family:Calibri,sans-serif;">Thank you for your enquiry</h1>
 							<h3 style="font-family:Calibri,sans-serif;">Your message has been sent successfully.</h3>
 							<p></p>
-							<p style="font-family:Calibri,sans-serif">Thank you for your enquiry. It has been forwarded to the relevant department and will be dealt with as soon as possible. If your inquiry is urgent, please use the contact number provided in <a href="http://www.theopeneyes.com/">website</a>.</p>
+							<p style="font-family:Calibri,sans-serif">Thank you for your enquiry. It has been forwarded to the relevant department and will be dealt with as soon as possible. If your inquiry is urgent, please use the contact number provided in <a href="http://www.theopeneyes.in/">website</a>.</p>
 							<p></p>
-							<p style="font-family:Calibri,sans-serif">Kindly,<br><strong>OpenEyes Technologies Inc.</strong></p>
+							<p style="font-family:Calibri,sans-serif">Kindly,<br><strong>OpenEyes Software Solutions Pvt. Ltd.</strong></p>
 						</td>
 					</tr>
 					<tr>
-						<td style="background-color:#a6ce39; background:#a6ce39; color:#333; padding:10px; text-align:center">Copyright &copy; 2018 OpenEyes Technologies - All rights reserved.</td>
+						<td style="background-color:#a6ce39; background:#a6ce39; color:#333; padding:10px; text-align:center">&copy; 2018 OpenEyes Software Solutions Pvt. Ltd. - All rights reserved.</td>
 					</tr>
 				</tbody>
 			</table>
@@ -134,17 +134,18 @@ if(isset($_POST['inquire_submit'])){
 							});
 						}, 0);
 					</script>
-				<?php
+		 		<?php
 			}
 			else
 			{	
 				?><script>
+            // alert("Thank you for your enquiry");
 						setTimeout(function() {
 							swal({
 								title: "Thank you for your enquiry",
 								type: "success",
 								showConfirmButton: false,
-								timer: 2000,
+								timer: 5000,
 							}, function() {
 								window.location = "";
 							});
@@ -191,6 +192,7 @@ if(isset($_POST['inquire_submit'])){
 <link href="css/style.css" rel="stylesheet" media="screen">
 <link rel="stylesheet" href="css/timeline.css">
 <link type="text/css" rel="stylesheet" href="css/flaticon.css" />
+<link type="text/css" rel="stylesheet" href="css/sweetalert2.min.css" />
 </head>
 <body class="body-full-page">
     
@@ -231,6 +233,7 @@ if(isset($_POST['inquire_submit'])){
                     <div class="g-recaptcha" data-sitekey="6LeGjHIUAAAAAJuV7KL2aoMQpKbgpdpR46TsWLJL"></div>
                     <span class='inquire_error' style="display:none; font-size:12px; color:red;">Captcha is Required.</span>
                 </div>
+                <div class="clearfix"></div>
 				<div class="col-sm-12 col-sm-6">
                     <button type="submit" id="inquiry_submit" name="inquire_submit" class="btn">Submit</button>
                 </div>
@@ -645,7 +648,9 @@ if(isset($_POST['inquire_submit'])){
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/sweetalert2.min.js"></script>
 <script src="https://www.google.com/recaptcha/api.js"></script>
+
 <script src="js/smoothscroll.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>

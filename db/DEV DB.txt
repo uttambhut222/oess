@@ -1,0 +1,4 @@
+$servername = "localhost";
+$username = "devbyo5_OESS";
+$password = "!^X#T]sHXYl)";
+$databasename = "devbyo5_OESS";
