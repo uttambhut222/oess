@@ -9,14 +9,14 @@ $password = "W3lc0m3@2018";
 $databasename = "DevAERECourses";
 */
 
-/*
+
 $servername = "localhost";
 $username = "root";
 $password = "";
 $databasename = "oess";
-*/
 
-///*
+
+/*
 $servername = "localhost";
 $username = "devbyo5_OESS";
 $password = "!^X#T]sHXYl)";
