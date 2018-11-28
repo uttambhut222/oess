@@ -257,7 +257,7 @@ if(isset($_POST['inquire_submit'])){
 		<div data-anchor="welcomeoess" class="pp-scrollable text-white section section-1">
 			<div class="scroll-wrap">
 				<!-- <div class="section-bg" style="background-size: cover!important;background:url(images/bg/bg.jpg);"></div> -->
-			    <video class="video-fluid" autoplay loop muted>
+			    <video class="video-fluid" controls="false" autoplay loop muted>
 					<source src="assets/videos/explore.mp4" type="video/mp4">
 					<source src="assets/videos/explore.webm" type="video/webm">
 				</video>

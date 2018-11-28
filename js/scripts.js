@@ -114,7 +114,10 @@ $(function () {
 
       	$('.pagepiling').pagepiling({
     		scrollingSpeed: 280,
-		    loopBottom:true,
+		     loopBottom: false,
+        loopTop: false,
+		verticalCentered: true,
+		direction: 'vertical',
 		    anchors: ['welcomeoess', 'aboutoess', 'ourwork', 'ourservices', 'ourclients', 'contactus'],
 			 navigation: {
           'position': 'right',
