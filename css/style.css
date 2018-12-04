@@ -559,7 +559,7 @@ label.error{
 .resume-content ul li{display: inline-block;width: 28px;height: 28px;margin: 0 5px;transition: all .25s ease-out;}
 .section-3 .title-uppercase,.section-3 .vertical-title span,.section-6 .title-uppercase,.section-6 .vertical-title span{color:#fff;}
 .navbar-toggle a.inquire_now{text-decoration:none;float: right;color: #fff!important;text-transform: uppercase;font-size: 16px;padding: 10px 20px!important;font-weight: 400;background: #0061AF;line-height: 18px;}
-.contact-info form h2{margin: 0px 0px 15px 0px;padding: 0px 15px;font-size: 24px;text-transform: uppercase;}
+.contact-info form h2{margin: 0px 0px 15px 0px;padding: 0px ;font-size: 24px;text-transform: uppercase;}
 .social_links {display: inline-block;}
 .social_links li {display: inline-block;color: #fff;font-size: 14px;padding: 0 7px;}
 .social_links li a {color: #fff;}
@@ -4458,17 +4458,18 @@ input[type='url'],
 input[type='password'],
 input[type='email'],
 input[type="search"],
-input[type="tel"],
+input[type="tel"],select,
 textarea{
   display: inline-block;
     width: 100%;
-    font-size: 1rem;
+    font-size: 15px;
+	line-height:15px;
     border-radius: 0.75em;
     color: #000;
     background-color: #fff;
     border: 1px solid #ccc;
-    padding: 0.2rem 1rem 0;
-    height: 3.6em;
+    padding: 10px;
+    height: auto;
     -webkit-appearance: none;
     -webkit-transition: all .15s;
     -o-transition: all .15s;
@@ -4477,7 +4478,7 @@ textarea{
 
 textarea{
   padding-top: 0.8rem;
-  height: 14rem;
+  height: 100px;
   resize:none;
   -webkit-transition: all .3s;
        -o-transition: all .3s;
@@ -4490,7 +4491,7 @@ input[type='url']:focus,
 input[type='password']:focus,
 input[type='email']:focus,
 input[type="search"]:focus,
-input[type="tel"]:focus,
+input[type="tel"]:focus, select:focus,
 textarea:focus{
   border-color: #0061AF;
   outline: 0;
@@ -4535,7 +4536,7 @@ textarea::-webkit-input-placeholder {
 }
 
 .form-group{
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 input.error{

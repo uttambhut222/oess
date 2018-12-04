@@ -215,17 +215,17 @@ if(isset($_POST['inquire_submit'])){
       <span class="close-menu icon-cross2 right-boxed"></span>
 		<div class="contact-info menu-list">
 			<form action="" method="post" id="inquireform">
-			  <div class="row">
+			  <div class="">
 			  <h2>Say Hey to us!</h2>
-				<div class="form-group col-sm-6">
+				<div class="form-group">
           <input type="text" name="FirstName" placeholder="*First Name" pattern="[A-Za-z\/\s\.']{2,50}" required maxlength=50 oninvalid="this.setCustomValidity('Please enter your valid First Name')" oninput="setCustomValidity('')"/>
           <input type="text" name="MiddleName" id="MiddleName"/>
 				</div>
-				<div class="form-group col-sm-6">
+				<div class="form-group">
           <input type="text" name="LastName" placeholder="*Last Name" pattern="[A-Za-z\/\s\.']{2,50}" required maxlength=50 oninvalid="this.setCustomValidity('Please enter your valid Last Name')" oninput="setCustomValidity('')"/>
 				</div>
 				<div class="clearfix"></div>
-				<div class="form-group col-sm-6">
+				<div class="form-group">
           <select name="Topic" required>
             <option value="" selected="">*Select a Topic</option>
             <option value="Mobile Apps">Mobile Apps</option>
@@ -239,29 +239,29 @@ if(isset($_POST['inquire_submit'])){
             <option value="Other">Other</option>
           </select>
 				</div>
-				<div class="form-group col-sm-6">
+				<div class="form-group">
           <input type="text" name="Email" placeholder="*Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength=50 required oninvalid="this.setCustomValidity('Please enter your Email Address in valid format')" oninput="setCustomValidity('')" />
         </div>
         <div class="clearfix"></div>
-				<div class="form-group col-sm-6">
+				<div class="form-group">
           <input type="text" name="Phone" placeholder="*Phone Number" pattern="[0-9\-.\s]+" maxlength=13 required oninvalid="this.setCustomValidity('Please enter your Phone Number in xxx.xxx.xxxx format')" oninput="setCustomValidity('')" />
 				</div>
-				<div class="form-group col-sm-6">
+				<div class="form-group">
         <input type="text" name="CompanyName" placeholder="*Company Name" required maxlength=100 oninvalid="this.setCustomValidity('Please enter your Company Name')" oninput="setCustomValidity('')" />
 				</div>
 				<div class="clearfix"></div>
-				<div class="form-group col-sm-12">
+				<div class="form-group">
         <textarea name="ProjectBrief" placeholder="*Brief about the project" required oninvalid="this.setCustomValidity('Please enter Brief about the project')" oninput="setCustomValidity('')"></textarea>
                 </div>
                 <div class="clearfix"></div>
-                <div class="form-group col-sm-6">
+                <div class="form-group">
                     <div class="g-recaptcha" data-sitekey="6LeGjHIUAAAAAJuV7KL2aoMQpKbgpdpR46TsWLJL"></div>
                     <span class='inquire_error' style="display:none; font-size:12px; color:red;">Captcha is Required.</span>
                 </div>
                 <div class="clearfix"></div>
-				<div class="col-sm-12 col-sm-6">
+				
                     <button type="submit" id="inquiry_submit" name="inquire_submit" class="btn">Submit</button>
-                </div>
+               
 			  </div>
 			</form>
 		</div>
