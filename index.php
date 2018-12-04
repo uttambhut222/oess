@@ -5,14 +5,16 @@ if(isset($_POST['inquire_submit'])){
 	$MiddleName = $_POST['MiddleName'];
 	if($MiddleName == NULL)
 	{
-	$FullName = $_POST['FullName'];
+	$FirstName = $_POST['FirstName'];
+	$LastName = $_POST['LastName'];
+	$Topic = $_POST['Topic'];
 	$Email = $_POST['Email'];
 	$Phone = $_POST['Phone'];
-	$Company = $_POST['Company'];
-	$Comments = $_POST['Comments'];
+	$CompanyName = $_POST['CompanyName'];
+	$ProjectBrief = $_POST['ProjectBrief'];
 	
-	$sql = "INSERT INTO tblinquire (FullName, Email, Phone, Company, Comments)
-			VALUES ('$FullName','$Email','$Phone','$Company','$Comments')";
+	$sql = "INSERT INTO tblinquire (FirstName, LastName, Topic, Email, Phone, CompanyName, ProjectBrief)
+			VALUES ('$FirstName','$LastName','$Topic','$Email','$Phone','$CompanyName','$ProjectBrief')";
 			
 	if ($conn->query($sql) === TRUE) {
 		
@@ -35,27 +37,32 @@ if(isset($_POST['inquire_submit'])){
 			<table border="1" cellpadding="0" cellspacing="0" style="border:1px solid rgb(120, 120, 120); color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:15px; line-height:22px; margin:0 auto; width:600px">
 				<tbody>
 					<tr>
-						<td style="background-color:rgba(180, 180, 180, 0.5); border-bottom:5px solid #0061af; padding:10px"><a href="http://www.theopeneyes.com" target="_blank"><img alt="The OpenEyes Software Solution Logo" src="http://www.theopeneyes.com/images/logo-email.png" /></a></td>
+						<td style="background-color:rgba(180, 180, 180, 0.5); border-bottom:5px solid #0061af; padding:10px"><a href="http://www.theopeneyes.com" target="_blank"><img alt="The OpenEyes Technologies Logo" src="http://www.theopeneyes.com/images/logo-email.png" /></a></td>
 					</tr>
 					<tr>
 						<td style="padding:10px">
 						
 						<p><span style="font-size:13pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">The following person has sent inquire:</span></span></span></p>
 
-						<p style="margin:0in 0in 8pt"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Full Name:&nbsp;'.$FullName.'</span></span></span></p>
+						<p style="margin:0in 0in 8pt"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">First name:&nbsp;'.$FirstName.'</span></span></span></p>
 
-						<p style="margin:0in 0in 8pt"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Email:&nbsp;'.$Email.'</span></span></span></p>
+						<p style="margin:0in 0in 8pt"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Last name:&nbsp;'.$LastName.'</span></span></span></p>
+
+						<p style="margin:0in 0in 8pt"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Topic:&nbsp;'.$Topic.'</span></span></span></p>
+
+						<p style="margin:0in 0in 8pt"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif; ">Email:&nbsp;'.$Email.'</span></span></span></p>
 
 						<p style="margin:0in 0in 8pt"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Phone:&nbsp;'.$Phone.'</span></span></span></p>
-
-						<p style="margin:0in 0in 8pt"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif; ">Company:&nbsp;'.$Company.'</span></span></span></p>
-
-						<p style="margin:0in 0in 8pt"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Comments:&nbsp;'.$Comments.'</span></span></span></p>
+						
+						<p style="margin:0in 0in 8pt"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Company Name:&nbsp;'.$CompanyName.'</span></span></span></p>
+						
+						<p style="margin:0in 0in 8pt"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Project Brief:&nbsp;'.$ProjectBrief.'</span></span></span></p>
 						
 						</td>
 					</tr>
 					<tr>
 						<td style="background-color:#a6ce39; background:#a6ce39; color:#333; padding:10px; text-align:center">&copy; 2018 OpenEyes Technologies Inc. - All rights reserved.</td>
+
 					</tr>
 				</tbody>
 			</table>
@@ -211,22 +218,40 @@ if(isset($_POST['inquire_submit'])){
 			  <div class="row">
 			  <h2>Say Hey to us!</h2>
 				<div class="form-group col-sm-6">
-                  <input type="text" name="FullName" placeholder="Full Name*" pattern="[A-Za-z\/\s\.']{2,100}" required maxlength=100 oninvalid="this.setCustomValidity('Please enter valid Name')" oninput="setCustomValidity('')">
-                  <input type="text" name="MiddleName" id="MiddleName"/>
+          <input type="text" name="FirstName" placeholder="*First Name" pattern="[A-Za-z\/\s\.']{2,50}" required maxlength=50 oninvalid="this.setCustomValidity('Please enter your valid First Name')" oninput="setCustomValidity('')"/>
+          <input type="text" name="MiddleName" id="MiddleName"/>
 				</div>
 				<div class="form-group col-sm-6">
-				  <input type="text" name="Company" placeholder="Company" maxlength=100>
+          <input type="text" name="LastName" placeholder="*Last Name" pattern="[A-Za-z\/\s\.']{2,50}" required maxlength=50 oninvalid="this.setCustomValidity('Please enter your valid Last Name')" oninput="setCustomValidity('')"/>
 				</div>
 				<div class="clearfix"></div>
 				<div class="form-group col-sm-6">
-				  <input type="email" name="Email" placeholder="Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength=50 required oninvalid="this.setCustomValidity('Please enter your Email Address in valid format')" oninput="setCustomValidity('')">
+          <select name="Topic" required>
+            <option value="" selected="">*Select a Topic</option>
+            <option value="Mobile Apps">Mobile Apps</option>
+            <option value="Mobile Games">Mobile Games</option>
+            <option value="Web Development">Web Development</option>
+            <option value="E-Commerce">E-Commerce</option>
+            <option value="UI / UX">UI / UX</option>
+            <option value="Wearables">Wearables</option>
+            <option value="IOT">IOT</option>
+            <option value="Cloud Consulting">Cloud Consulting</option>
+            <option value="Other">Other</option>
+          </select>
 				</div>
 				<div class="form-group col-sm-6">
-				  <input type="text" name="Phone" placeholder="Phone*" pattern="[0-9\-.\s]{10,}" maxlength=13 required oninvalid="this.setCustomValidity('Please enter your Phone Number in xxx.xxx.xxxx format')" oninput="setCustomValidity('')">
+          <input type="text" name="Email" placeholder="*Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength=50 required oninvalid="this.setCustomValidity('Please enter your Email Address in valid format')" oninput="setCustomValidity('')" />
+        </div>
+        <div class="clearfix"></div>
+				<div class="form-group col-sm-6">
+          <input type="text" name="Phone" placeholder="*Phone Number" pattern="[0-9\-.\s]+" maxlength=13 required oninvalid="this.setCustomValidity('Please enter your Phone Number in xxx.xxx.xxxx format')" oninput="setCustomValidity('')" />
+				</div>
+				<div class="form-group col-sm-6">
+        <input type="text" name="CompanyName" placeholder="*Company Name" required maxlength=100 oninvalid="this.setCustomValidity('Please enter your Company Name')" oninput="setCustomValidity('')" />
 				</div>
 				<div class="clearfix"></div>
 				<div class="form-group col-sm-12">
-				  <textarea name="Comments" placeholder="Message*" required oninvalid="this.setCustomValidity('Please enter Message')" oninput="setCustomValidity('')"></textarea>
+        <textarea name="ProjectBrief" placeholder="*Brief about the project" required oninvalid="this.setCustomValidity('Please enter Brief about the project')" oninput="setCustomValidity('')"></textarea>
                 </div>
                 <div class="clearfix"></div>
                 <div class="form-group col-sm-6">
