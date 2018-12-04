@@ -2,19 +2,19 @@
 
 //Database
 
-/*
+
 $servername = "DevAERECourses.db.11797364.2d8.hostedresource.net";
 $username = "DevAERECourses";
 $password = "W3lc0m3@2018";
 $databasename = "DevAERECourses";
-*/
 
-///*
+
+/*
 $servername = "localhost";
 $username = "root";
 $password = "";
 $databasename = "oess";
-//*/
+*/
 
 /*
 $servername = "localhost";

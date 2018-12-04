@@ -28,9 +28,9 @@ if(isset($_POST['inquire_submit'])){
 				//$mail->FromName = FROMNAME; 
 				$mail->Username = USERNAME;
 				$mail->Password = USERPASSWORD;
-				$mail->SetFrom('no-reply@theopeneyes.com','OpenEyes Software Solutions Pvt. Ltd.');
+				$mail->SetFrom('no-reply@theopeneyes.com','OpenEyes Technologies Inc.');
 									
-			$mail->Subject = "Inquire Generated - OpenEyes Software Solutions Pvt. Ltd.";
+			$mail->Subject = "Inquire Generated - OpenEyes Technologies Inc.";
 			$mail->Body = '
 			<table border="1" cellpadding="0" cellspacing="0" style="border:1px solid rgb(120, 120, 120); color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:15px; line-height:22px; margin:0 auto; width:600px">
 				<tbody>
@@ -55,7 +55,7 @@ if(isset($_POST['inquire_submit'])){
 						</td>
 					</tr>
 					<tr>
-						<td style="background-color:#a6ce39; background:#a6ce39; color:#333; padding:10px; text-align:center">&copy; 2018 OpenEyes Software Solutions Pvt. Ltd. - All rights reserved.</td>
+						<td style="background-color:#a6ce39; background:#a6ce39; color:#333; padding:10px; text-align:center">&copy; 2018 OpenEyes Technologies Inc. - All rights reserved.</td>
 					</tr>
 				</tbody>
 			</table>
@@ -93,9 +93,9 @@ if(isset($_POST['inquire_submit'])){
 				//$mail->FromName = FROMNAME; 
 				$mail->Username = USERNAME;
 				$mail->Password = USERPASSWORD;
-				$mail->SetFrom('info@theopeneyes.in','OpenEyes Software Solutions Pvt. Ltd.');
+				$mail->SetFrom('info@theopeneyes.in','OpenEyes Technologies Inc.');
 									
-			$mail->Subject = "Thank you for enquiry - OpenEyes Software Solutions Pvt. Ltd.";
+			$mail->Subject = "Thank you for enquiry - OpenEyes Technologies Inc.";
 			$mail->Body = '
 			<table border="1" cellpadding="0" cellspacing="0" style="border:1px solid rgb(120, 120, 120); color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:15px; line-height:22px; margin:0 auto; width:600px">
 				<tbody>
@@ -109,11 +109,11 @@ if(isset($_POST['inquire_submit'])){
 							<p></p>
 							<p style="font-family:Calibri,sans-serif">Thank you for your enquiry. It has been forwarded to the relevant department and will be dealt with as soon as possible. If your inquiry is urgent, please use the contact number provided in <a href="http://www.theopeneyes.in/">website</a>.</p>
 							<p></p>
-							<p style="font-family:Calibri,sans-serif">Kindly,<br><strong>OpenEyes Software Solutions Pvt. Ltd.</strong></p>
+							<p style="font-family:Calibri,sans-serif">Kindly,<br><strong>OpenEyes Technologies Inc.</strong></p>
 						</td>
 					</tr>
 					<tr>
-						<td style="background-color:#a6ce39; background:#a6ce39; color:#333; padding:10px; text-align:center">&copy; 2018 OpenEyes Software Solutions Pvt. Ltd. - All rights reserved.</td>
+						<td style="background-color:#a6ce39; background:#a6ce39; color:#333; padding:10px; text-align:center">&copy; 2018 OpenEyes Technologies Inc. - All rights reserved.</td>
 					</tr>
 				</tbody>
 			</table>
@@ -185,7 +185,7 @@ if(isset($_POST['inquire_submit'])){
 <!-- Favicons -->
 <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico" />
 
-<title>OpenEyes Software Solutions Pvt. Ltd. (OPC)</title> 
+<title>OpenEyes Technologies Inc.</title> 
 
 <!-- Styles -->
 <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
@@ -209,7 +209,7 @@ if(isset($_POST['inquire_submit'])){
 		<div class="contact-info menu-list">
 			<form action="" method="post" id="inquireform">
 			  <div class="row">
-			  <h2>Inquire Now</h2>
+			  <h2>Say Hey to us!</h2>
 				<div class="form-group col-sm-6">
                   <input type="text" name="FullName" placeholder="Full Name*" pattern="[A-Za-z\/\s\.']{2,100}" required maxlength=100 oninvalid="this.setCustomValidity('Please enter valid Name')" oninput="setCustomValidity('')">
                   <input type="text" name="MiddleName" id="MiddleName"/>
@@ -246,7 +246,7 @@ if(isset($_POST['inquire_submit'])){
 <header class="navbar navbar-2 navbar-white boxed">
       <div class="navbar-bg"></div>
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-		<a class="inquire_now">Inquire Now</a>
+		<a class="inquire_now">Contact us</a>
       </button>
       <a class="brand" href="#">
         <img class="brand-img" alt="" src="images/brand.png">
@@ -268,8 +268,11 @@ if(isset($_POST['inquire_submit'])){
 							<div class="col-md-12 col-sm-12 col-xs-12">
 								<div class="video_desc">
 									<h5>welcome to</h5>
-									<h2 class="title-uppercase text-white">OpenEyes Software Solutions Pvt. Ltd.</h2>
+									<h2 class="title-uppercase text-white">OpenEyes Technologies Inc.</h2>
 									<p>This could be the beginning of a beautiful relationship.</p>
+									<a href="" class="read_more">Learn More</a>
+									<div class="clearfix"></div>
+									<a href="#aboutoess" class="next-section"><i class="fa fa-angle-down"></i></a>
 								</div>
 							</div>
 						</div>
@@ -594,7 +597,7 @@ if(isset($_POST['inquire_submit'])){
 						  </div>
 						  <div class="clearfix"></div>
 						  <div class="footer_bottom">
-							<div class="col-md-9 col-sm-9 text-left">Copyrights &copy; 2018 OpenEyes Software Solutions Pvt. Ltd. (OPC)</div>
+							<div class="col-md-9 col-sm-9 text-left">Copyrights &copy; 2018 OpenEyes Technologies Inc.</div>
 							<div class="col-md-3 col-sm-3 text-right">
 								<ul class="social_links">
 									<li><a href="https://twitter.com/OpenEyesTech" target="_blank"><i class="flaticon-twitter-logo-silhouette"></i></a></li>
