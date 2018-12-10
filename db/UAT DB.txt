@@ -1,4 +1,0 @@
-$servername = "localhost";
-$username = "uatbyo5_OESS";
-$password = "0vsE[wSNJy3Y";
-$databasename = "uatbyo5_OESS";
