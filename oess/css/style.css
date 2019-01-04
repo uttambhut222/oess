@@ -623,6 +623,15 @@ video {background-size: cover;display: table-cell;vertical-align: middle;width: 
  @media (min-width:2200px){
 	 .ourwork_section.pp-scrollable .vertical-centred { padding-top:35rem;}
  }
+ @media (max-width:1450px){
+	 .project-box{height:180px!important;}
+	 .resume-content ul li{height:25px; width:25px;}
+ }
+ @media (max-width:1300px){
+	 .project-box{height:200px!important;}
+.resume-title{font-size:16px;}
+.resume-content{height:320px!important;}
+ }
  @media (max-width:1367px){
 	 .ourwork_section.pp-scrollable .vertical-centred { padding-top: 11.3rem;}
  }
@@ -672,7 +681,8 @@ video {background-size: cover;display: table-cell;vertical-align: middle;width: 
  .navbar-toggle a.inquire_now{font-size: 14px;padding: 5px 5px !important;margin-top: 10px;}
  .menu-list {right:15px;left: 0!important;top: 4rem!important;bottom: 0rem!important;padding-left: 5%!important;}
  .footer .title_sponser{height:auto;}
- .header_links{margin:5px 10px 0 0;}
+ .header_links{margin:11px 10px 0 0;}
+ .header_links.social_links li{height: 27px;width: 27px; font-size: 13px;  padding: 1px;}
  .map_content {margin: 0!important;}
 }
  @media (max-width:640px){

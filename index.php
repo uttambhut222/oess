@@ -28,7 +28,7 @@
 
     <!-- Sidebar Menu-->
 <?php 
-include("oess/config.php");
+include("config.php");
 
 if(isset($_POST['inquire_submit'])){
 	$MiddleName = $_POST['MiddleName'];
@@ -47,7 +47,7 @@ if(isset($_POST['inquire_submit'])){
 			
 	if ($conn->query($sql) === TRUE) {
 		
-		require_once('oess/email/class.phpmailer.php');
+		require_once('email/class.phpmailer.php');
 			$mail = new PHPMailer(); // create a new object
 			$mail->IsSMTP(); // enable SMTP
 			$mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
@@ -85,7 +85,7 @@ if(isset($_POST['inquire_submit'])){
 						
 						<p style="margin:0in 0in 8pt"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Company Name:&nbsp;'.$CompanyName.'</span></span></span></p>
 						
-						<p style="margin:0in 0in 8pt"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Project Brief:&nbsp;'.$ProjectBrief.'</span></span></span></p>
+						<p style="margin:0in 0in 8pt"><span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Inquiry Brief:&nbsp;'.$ProjectBrief.'</span></span></span></p>
 						
 						</td>
 					</tr>
@@ -110,7 +110,7 @@ if(isset($_POST['inquire_submit'])){
 							}, function() {
 								window.location = "";
 							});
-						}, 0);
+						}, 2000);
 					</script>
 		 		<?php
 			}
@@ -168,7 +168,7 @@ if(isset($_POST['inquire_submit'])){
 							}, function() {
 								window.location = "";
 							});
-						}, 0);
+						}, 2000);
 					</script>
 		 		<?php
 			}
@@ -185,7 +185,7 @@ if(isset($_POST['inquire_submit'])){
 							}, function() {
 								window.location = "";
 							});
-						}, 0);
+						}, 2000);
 					</script>
 				<?php
 			}
@@ -200,7 +200,7 @@ if(isset($_POST['inquire_submit'])){
 					}, function() {
 						window.location = "";
 					});
-				}, 0);
+				}, 2000);
 			</script>
 		<?php
 	}
@@ -212,7 +212,7 @@ if(isset($_POST['inquire_submit'])){
 		<div class="contact-info menu-list">
 			<form action="" method="post" id="inquireform">
 			  <div class="">
-			  <h2>Say Hey to us!</h2>
+			  <h2>Say Hi to us!</h2>
 				<div class="form-group">
           <input type="text" name="FirstName" placeholder="*First Name" pattern="[A-Za-z\/\s\.']{2,50}" required maxlength=50 oninvalid="this.setCustomValidity('Please enter your valid First Name')" oninput="setCustomValidity('')"/>
           <input type="text" name="MiddleName" id="MiddleName"/>
@@ -243,11 +243,11 @@ if(isset($_POST['inquire_submit'])){
           <input type="text" name="Phone" placeholder="*Phone Number" pattern="[0-9\-.\s]+" maxlength=13 required oninvalid="this.setCustomValidity('Please enter your Phone Number in xxx.xxx.xxxx format')" oninput="setCustomValidity('')" />
 				</div>
 				<div class="form-group">
-        <input type="text" name="CompanyName" placeholder="*Company Name" required maxlength=100 oninvalid="this.setCustomValidity('Please enter your Company Name')" oninput="setCustomValidity('')" />
+        <input type="text" name="CompanyName" placeholder="Company Name" maxlength=100 />
 				</div>
 				<div class="clearfix"></div>
 				<div class="form-group">
-        <textarea name="ProjectBrief" placeholder="*Brief about the project" required oninvalid="this.setCustomValidity('Please enter Brief about the project')" oninput="setCustomValidity('')"></textarea>
+        <textarea name="ProjectBrief" placeholder="*Brief about your inquiry" required oninvalid="this.setCustomValidity('Please enter Brief about your inquiry')" oninput="setCustomValidity('')"></textarea>
                 </div>
                 <div class="clearfix"></div>
                 <div class="form-group">
@@ -353,34 +353,34 @@ if(isset($_POST['inquire_submit'])){
           <div class="scrollable-content">
             <div class="vertical-centred">
               <div class="boxed boxed-inner">
-                <div class="vertical-title hidden-xs hidden-sm"><span>Work</span></div>
+                <div class="vertical-title hidden-xs hidden-sm"><span>What we have done</span></div>
                 <div class="boxed">
                   <div class="container">
                     <div class="intro">
                       <div class="row">
                         <div class="col-md-12">
-                          <h2 class="title-uppercase text-white visible-xs visible-sm">Work</h2>
+                          <h2 class="title-uppercase text-white visible-xs visible-sm">What we have done</h2>
                           <div class="row-project-box row">
                             <div class="afp col-project-box col-sm-6 col-md-4 col-lg-4">
-                              <a href="http://theopeneyes.com/afp_detail" target="_blank" class="project-box">
+                              <a href="http://theopeneyes.com/afp" target="_blank" class="project-box">
                                 <div class="project-box-inner">
-                                  <h5>Association for Financial Professionals</h5>
+                                  <h5>Corporate Training Skills Assessment</h5>
                                   <div class="project-category">Assessment Tool</div>
 								  <p>AFP established and administers the Certified Treasury Professional and Certified Corporates.</p>
                                 </div>
                               </a>
                             </div>
                             <div class="atd col-project-box col-sm-6 col-md-4 col-lg-4">
-                              <a href="http://theopeneyes.com/atd_detail" target="_blank" class="project-box">
+                              <a href="http://theopeneyes.com/atd" target="_blank" class="project-box">
                                 <div class="project-box-inner">
-                                  <h5>Association for Talent Development</h5>
-                                  <div class="project-category">Assessment Tool</div>
+                                  <h5>Assessment Tool</h5>
+                                  <div class="project-category">Scoring Tool for Assessing Team </div>
 								  <p>ATD has several awards programs and recognizes organizations and individuals who are leading the talent development profession.</p>
                                 </div>
                               </a>
                             </div>
                             <div class="lfb col-project-box col-sm-6 col-md-4 col-lg-4">
-                              <a href="http://theopeneyes.com/learnfeedback_detail" target="_blank" class="project-box">
+                              <a href="http://theopeneyes.com/learnfeedback" target="_blank" class="project-box">
                                 <div class="project-box-inner">
                                   <h5>Learn Feedback</h5>
                                   <div class="project-category">Straehle Feedback Inventory</div>
@@ -389,7 +389,7 @@ if(isset($_POST['inquire_submit'])){
                               </a>
                             </div>
                             <div class="alli col-project-box col-sm-6 col-md-4 col-lg-4">
-                              <a href="http://theopeneyes.com/allinstitute_detail" target="_blank" class="project-box">
+                              <a href="http://theopeneyes.com/allinstitute" target="_blank" class="project-box">
                                 <div class="project-box-inner">
                                   <h5>All Institute</h5>
                                   <div class="project-category">Coaching Services</div>
@@ -398,7 +398,7 @@ if(isset($_POST['inquire_submit'])){
                               </a>
                             </div>
                             <div class="ted col-project-box col-sm-6 col-md-4 col-lg-4">
-                              <a href="http://theopeneyes.com/tedxtysons_detail" target="_blank" class="project-box">
+                              <a href="http://theopeneyes.com/tedxtysons" target="_blank" class="project-box">
                                 <div class="project-box-inner">
                                   <h5>TEDxTysons</h5>
                                   <div class="project-category">Coaching Services</div>
@@ -407,7 +407,7 @@ if(isset($_POST['inquire_submit'])){
                               </a>
                             </div>
                             <div class="aere col-project-box col-sm-6 col-md-4 col-lg-4">
-                              <a href="http://theopeneyes.com/aere_detail" target="_blank" class="project-box">
+                              <a href="http://theopeneyes.com/aere" target="_blank" class="project-box">
                                 <div class="project-box-inner">
                                   <h5>Assessment, Education &amp; Research Experts</h5>
                                   <div class="project-category">Event</div>
@@ -598,7 +598,7 @@ if(isset($_POST['inquire_submit'])){
                               <div class="partner-inner"><a href="http://td.org" target="_blank"><img alt="" class="img-responsive" src="oess/images/partners/atd.png"></a></div>
                             </div>
                             <div class="col-partner">
-                              <div class="partner-inner"><a href="http://learnfeedback.com" target="_blank"><img alt="" class="img-responsive" src="oess/images/partners/lf.png"></a></div>
+                              <div class="partner-inner"><a href="https://www.hrci.org/" target="_blank"><img alt="" class="img-responsive" src="oess/images/partners/hrci.jpg"></a></div>
                             </div>
                             <div class="col-partner">
                               <div class="partner-inner"><a href="http://www.aerexperts.com" target="_blank"><img alt="" class="img-responsive" src="oess/images/partners/aere.png"></a></div>

@@ -121,7 +121,7 @@ $(function () {
 		    anchors: ['welcomeoess', 'aboutoess', 'ourwork', 'ourservices', 'ourclients', 'contactus'],
 			 navigation: {
           'position': 'right',
-          'tooltips': ['Welcome', 'Who we are', 'Work', 'What we do', 'Whom we serve', 'Where we are']
+          'tooltips': ['Welcome', 'Who we are', 'What we have done', 'What we do', 'Whom we serve', 'Where we are']
         },
 			
 		    afterLoad: function(anchorLink, index){
